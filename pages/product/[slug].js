@@ -43,11 +43,10 @@ const ProductDetails = ({ product, products }) => {
               <AiFillStar />
               <AiFillStar />
               <AiFillStar />
-
               <AiFillStar />
             </div>
             <p>
-              (20)
+              (10)
             </p>
           </div>
           <h4>Details: </h4>
@@ -69,7 +68,7 @@ const ProductDetails = ({ product, products }) => {
       </div>
 
       <div className="maylike-products-wrapper">
-          <h2>You may also like:</h2>
+          <h2>You may also like these:</h2>
           <div className="marquee">
             <div className="maylike-products-container track">
               {products.map((item) => (
@@ -89,9 +88,7 @@ export const getStaticPaths = async () => {
     }
   }
   `;
-
   const products = await client.fetch(query);
-
   const paths = products.map((product) => ({
     params: { 
       slug: product.slug.current
@@ -107,7 +104,6 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params: { slug }}) => {
   const query = `*[_type == "product" && slug.current == '${slug}'][0]`;
   const productsQuery = '*[_type == "product"]'
-  
   const product = await client.fetch(query);
   const products = await client.fetch(productsQuery);
 

@@ -61,7 +61,7 @@ width: 100%;
 }
 
  span.text-red {
-    -webkit-text-stroke: 1px #f02d34;
+    -webkit-text-stroke: 1px #ec3238;
     margin-left: 6px;
 }
 .logo{
@@ -144,7 +144,7 @@ width: 100%;
 
 }
 .hero-banner-container .beats-solo{
-  font-size: 20px;
+  font-size: 18px;
 }
 .hero-banner-container button{
    border-radius: 15px;
@@ -169,7 +169,7 @@ width: 100%;
 }
 .hero-banner-container h1{
   color: white;
-  font-size: 8em;
+  font-size: 7em;
   
   margin-bottom: 30px;
   margin-left: -20px;
@@ -313,7 +313,7 @@ font-size: larger;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 9px;
   justify-content: center;
 
 }
@@ -451,7 +451,7 @@ padding: 30px 65px;
   transition: .3s ease-in-out;
 }
 .product-detail-image:hover{
-  background-color: #f02d34;
+  background-color: #e55b5f;
 
 }
 .small-images-container{
